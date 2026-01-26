@@ -12,6 +12,12 @@ that prevent it from running .These can be syntax errors or logical errors.
 #print("Hello world"
 
 #Exceptions 
+
+""" 
+Exceptions are the unexpected events or errors that occur
+during the execution of a program , which disrupts the normal flow of the program.
+"""
+
 # a=int(input("Tell me your number-"))
 # print(10/a) # if a=0 ZeroDivisionError: division by zero
 
@@ -25,10 +31,12 @@ else-run code only if no exception occurs.
 finally-Run code no matter what,whether there is an exception or not.
 raise-Manually throw an exception.
 """
+
+#Try must be exist with one except or one finally ,it will not be alone.
 # a=int(input("Enter a number "))
 # try:
 #    print(10/a)
-# except Exception as err:
+# except Exception as err: or except ZeroDivisionError
 #    print( f"Sorry there is an err as {err}")
 # else :
 #    print("Good There is no exception")
@@ -37,6 +45,7 @@ raise-Manually throw an exception.
 # print("Ok i have done my task")
 
 
+#Except will only execute if Exception will not occur.
 
 
 #Another Exception
@@ -48,7 +57,6 @@ raise-Manually throw an exception.
 # print("ok i have done my divison")
 
 age=int(input("Tell me your age - "))
-
 try:
    if age<10 or age>18:
       raise ValueError("Your age must be between 10 and 18")
